@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Gidole&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Boldonse&family=Gidole&family=Raleway:ital,wght@0,203;1,203&display=swap');
+
+
+
+body {
+    font-family: 'Gidole', sans-serif;
+    color: black;
+    margin: 0;
+    padding: 0;
+    background-size: 400% 400%;
+    animation: moveBackground 10s ease infinite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+
+
+.container {
+    position: relative;
+    z-index: 10;
+    color: black;
+    background: rgba(255, 255, 255, 0.9); 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 0%;
+    border-radius: 1%;
+}
+
+
+
+.container {
+    display: flex;
+    color: black;
+    max-width: 900px;
+    margin: 20px auto;
+    background: #fffff0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar {
+    font-family: 'Gidole', sans-serif;
+    width: 35%;
+    color: black;
+    background-color: #d4dddab0;
+    padding: 20px;
+    text-align: center;
+}
+
+.profile-pic {
+    width: 120px;
+    border-radius: 5%;
+}
+
+.content {
+    font-family: 'Gidole', sans-serif;
+    color: black;
+    width: 65%;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 24px;
+    color: black;
+    margin-bottom: 10px;
+    background-color: #d4dddab0;
+    padding: 20px;
+    margin: 0 0 20px 0;
+}
+
+
+.contact, .skills, .languages, .interests {
+    font-family: 'Gidole', sans-serif;
+    color: black;
+    margin-top: 20px;
+    text-align: left;
+    border: 1px solid #fffff0;
+    padding: 10px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    padding: 5px 0;
+}
+
+.experience, .education, .rodo, .profil {
+    color: black;
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #d4dddab0;
+}
+
+h3 {
+    color: black;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+h2 {
+    background-color: #d4dddab0;
+    color: black;
+    padding: 5px;
+    font-size: 16px;
+    margin-top: 20px;
+    text-align: center;
+}
+p {
+    font-size: 14px;
+    line-height: 1.5;
+}
+h4 {
+    background-color: #fffff0;
+    color: black;
+    padding: 5px;
+    font-size: 16px;
+    margin-top: 20px;
+    text-align: center;
+}
+.count-particles{
+    position: absolute;
+    top: 48px;
+    left: 0;
+    width: 80px;
+    color: #13E8E9;
+    font-size: .8em;
+    text-align: left;
+    text-indent: 4px;
+    line-height: 14px;
+    padding-bottom: 2px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+  }
+  
+  .js-count-particles{
+    font-size: 1.1em;
+  }
+  
+#stats,
+  .count-particles {
+      -webkit-user-select: none;
+      -moz-user-select: none;    
+      -ms-user-select: none;     
+      user-select: none;         
+      margin-top: 5px;
+      margin-left: 5px;
+  }
+  
+  
+  #stats{
+    border-radius: 3px 3px 0 0;
+    overflow: hidden;
+  }
+  
+  .count-particles{
+    border-radius: 0 0 3px 3px;
+  }
+  
+  
+  /* ---- particles.js container ---- */
+  
+  #particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(-45deg, #20002c, rgb(244, 244, 160), #c0accf, rgb(102, 173, 239));
+    z-index: -1;
+}
+
+/* Стилі для з'єднань частинок з пріоритетом */
+#particles-js canvas {
+    pointer-events: none !important;
+}
+
+/* Прив'язка для з'єднань частинок */
+.count-particles {
+    position: absolute;
+    top: 48px;
+    left: 0;
+    width: 80px;
+    color: #13E8E9;
+    font-size: .8em;
+    text-align: left;
+    text-indent: 4px;
+    line-height: 14px;
+    padding-bottom: 2px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+}
+
+.js-count-particles {
+    font-size: 1.1em;
+}
+
+#stats,
+.count-particles {
+    -webkit-user-select: none;
+    -moz-user-select: none;    
+    -ms-user-select: none;     
+    user-select: none;         
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+#stats {
+    border-radius: 3px 3px 0 0;
+    overflow: hidden;
+}
+
+.count-particles {
+    border-radius: 0 0 3px 3px;
+}
