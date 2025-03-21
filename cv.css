@@ -26,7 +26,7 @@ body {
     max-width: 900px;
     margin: 20px auto;
     display: flex;
-    background: #fffff0;
+    background: #fffff9;
 }
 
 .sidebar {
@@ -53,12 +53,15 @@ body {
 p a, h3 a {
     color: black;
     text-decoration: none;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
 }
 
 p a:hover, p a:focus, p a:active,
 h3 a:hover, h3 a:focus, h3 a:active {
-    color: black;
+    color: blue; 
+    text-shadow: 0 0 5px black, 0 0 10px black; 
 }
+
 
 h1 {
     font-size: 24px;
@@ -78,14 +81,8 @@ h2 {
     text-align: center;
 }
 
-h3 {
-    color: black;
-    font-size: 18px;
-    margin-bottom: 5px;
-}
-
 h4 {
-    background-color: #fffff0;
+    background-color: #fffff9;
     color: black;
     padding: 5px;
     font-size: 16px;
@@ -102,17 +99,12 @@ li {
     padding: 5px 0;
 }
 
-p {
-    font-size: 14px;
-    line-height: 1.5;
-}
-
 .contact, .skills, .languages, .interests {
     font-family: 'Gidole', sans-serif;
     color: black;
     margin-top: 20px;
     text-align: left;
-    border: 1px solid #fffff0;
+    border: 1px solid #fffff9;
     padding: 10px;
 }
 
@@ -128,7 +120,7 @@ p {
     top: 48px;
     left: 0;
     width: 80px;
-    color: #13E8E9;
+    color: #fffff9;
     font-size: .8em;
     text-align: left;
     text-indent: 4px;
