@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV Nazar Vavryk</title>
+    <link rel="icon" type="image/png" sizes="48x48" href="Photo/icons8-manager-48.png">
     <link rel="stylesheet" media="screen" href="cv.css">
 </head>
 <body>
@@ -82,16 +83,22 @@
             </section>
         </main>
     </div>
-    <div id="google_translate_element" style="position: absolute; top: 10px; right: 10px;"></div>
     <script type="text/javascript">
-        function googleTranslateElementInit() {
-            new google.translate.TranslateElement(
-                {pageLanguage: 'pl'},
-                'google_translate_element'
-            );
+        function translatePage() {
+            var language = document.getElementById("language-select").value;
+            var googleTranslateScript = document.createElement("script");
+            googleTranslateScript.type = "text/javascript";
+            googleTranslateScript.src = "https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit";
+            document.body.appendChild(googleTranslateScript);
+
+            window.googleTranslateElementInit = function() {
+                new google.translate.TranslateElement({
+                    pageLanguage: 'pl',
+                    includedLanguages: 'pl,en,uk',
+                    layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+                }, 'google_translate_element');
+            };
         }
     </script>
-    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-
 </body>
 </html>
