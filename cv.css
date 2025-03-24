@@ -171,3 +171,29 @@ li {
     50% { background-position: 50% 50%; }
     100% { background-position: 0% 0%; }
 }
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        width: 95%;
+    }
+
+    .sidebar {
+        width: 100%;
+    }
+
+    .content {
+        width: 100%;
+    }
+
+    .profile-pic {
+        width: 80px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    h2, h4 {
+        font-size: 14px;
+    }
+}
